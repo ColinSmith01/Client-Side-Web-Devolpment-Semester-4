@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>JS CA Practice Workfile</title>
+	<style>
+		.fbc {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		.fbi {
+			border: 1px solid black;
+			width: 30%;
+			min-height: 2em;
+			margin: 0 1em 1em 0;
+			padding: 0.5em;
+		}
+
+		button {
+			padding: 0.5em;
+		}
+
+		button,
+		input {
+			margin: 0 1em 1em 0;
+		}
+
+		.blue {
+			background: lightsalmon;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin: 0.5em 0;
+		}
+
+		table th,
+		table td {
+			border: 1px solid black;
+			padding: 0.3em;
+			text-align: left;
+		}
+
+		.page {
+			border: 2px solid gray;
+			background: lightgray;
+			padding: 0.5em;
+			width: 30em;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<script>
+	alert("Hello, Hello!");
+	console.log("Hello, Hello!"); 
+   </script>
+<body>
+	<h1>Javascript Revision 1 Workfile</h1>
+
+	<p id="my-text">This is a paragraph of very interesting text.</p>
+
+	<div class="fbc">
+		<p class="fbi" id="text-destination-1"></p>
+
+		<p class="fbi" id="text-destination-2"></p>
+	</div>
+								<!----Q7-->
+	<button onclick="alert('Youve clicked the button!')">Alert!</button> 
+
+	<input type="text" id="text-input">
+
+	<br /><br />
+
+	<p><button onclick="cpbutton()">Copy my text to destination 2</button></p>
+
+	<!---Q10-->
+	<p></p>
+	<label for="date" id="ds">Date:</label>
+	<input type="date" id="ds">
+
+	<!----Q11b-->
+	Enter a number: <input type="number" id="num1">
+	<button type="button" onclick="double();">Double the number</button>
+	Answer:<p> <span id="double-number"></span></p>
+
+	
+	<div id="my-box" class="fbi blue center">
+		<h3>My box</h3>
+	</div>
+	<button type="button" onclick="changeColor()">Toggle colour</button>
+
+
+	<!----Q1-->
+	<script>
+		function writehHello() {
+			console.log('Hello');
+			alert('Hello');
+		}
+		 writehHello();
+		</script>
+
+	<!----Q4-->	
+	<script>
+		function writeInfoToConsole() {
+			console.log('Hello from the line1');
+			console.log('Hello from the line2');
+			console.log('Hello from the line3');
+		}
+		 writeInfoToConsole();
+		</script>
+
+	  
+		
+	<script src="practise.js"></script>
+</body>
+
+</html>

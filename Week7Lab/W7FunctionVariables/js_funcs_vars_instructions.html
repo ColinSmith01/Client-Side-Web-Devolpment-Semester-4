@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Functions and Variables Exercises</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    <ul class="links">
+	    </ul>
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Functions and Variables Exercises</h1>
+
+	    <section class="box">
+		<h3>Exercise 1: Random Number</h3>
+		<ul>
+		    <li>Open the files <em>ex1.html</em> and <em>ex1.js</em> in a text editor.</li>
+		    <li>In file <em>em.html</em> use a <span class="fw">script</span> element to include the file <em>ex1.js</em>. If you cannot remember how to do it, go back to lab <em>Javascript in HTML</em>.</li>
+		    <li>In the Javascript file you will find a function called <span class="fw">buttonAction</span>. <span class="question">How many parameters does it have? What does it do?</span><p class="answer" hidden>It has 0 parameters. It does nothing (for the moment) but is a valid function.</p></li>
+		    <li>Add a call to function <span class="fw">buttonAction</span> as the handler code for a click on the button in file <em>ex1.html</em>. If you cannot remember how to do it, go back to lab <em>Javascript Events and Handlers</em>. </li>
+		    <li><span class="question">What happens when you click the button now? Why?</span><p class="answer" hidden>Nothing happens. Because the called function does nothing.</p></li>
+		    
+		    <li>In file <em>ex1.js</em> write a new function. It should:
+			<ul>
+			    <li>be named <span class="fw">getRand1to10</span></li>
+			    <li>have 0 parameters</li>
+			    <li>get a random number between 1 and 10, inclusive, and assign it to variable r, with the following code:<pre>
+
+let r = Math.floor(Math.random() * 10) + 1
+			    </pre>
+			    <span class="question">How does this work (if you are interested)?</span><div class="answer" hidden><ul>
+				<li><span class="fw">Math.random()</span> returns a random real number between 0 (inclusive) and 1 (exclusive)</li>
+				<li><span class="fw">* 10</span> makes the number 10 times bigger and the number is now a random real number between 0 (inclusive) and 10 (exclusive)</li>
+				<li>the call to <span class="fw">Math.floor</span> rounds the number <strong>down</strong> to the nearest integer and now we have a random integer between 0 (inclusive) and 9 (inclusive)</li>
+				<li><span class="fw">+ 1</span> moves the range of integers from 0-9 to 1-10 and now we have a random integer between 1 (inclusive) and 10 (inclusive)</li>
+			    </ul></div>
+			    </li>
+			    <li>return the obtained random number</li>
+			</ul>
+		    </li>
+		    <li>Open the file <em>ex1.html</em> in a browser, open the developer tools and reload <em>ex1.html</em>. Now you can test your function by calling it from the console.</li>
+		    <li>Once your function <span class="fw">getRand1to10</span>, add some code to function <span class="fw">buttonAction</span> so that it calls <span class="fw">getRand1to10</span> and writes the random number that is returned into the element with id <span class="fw">rand-num</span>.</li>
+		    <li>Test that the button click makes the random number appear on the page in <em>em.html</em> (see <a href="https://screencast-o-matic.com/watch/cYXeoUs9IQ">this video</a> for example of expected behaviour).</li>
+		</ul>
+
+		<h3>Exercise 2: Triple the Random Number</h3>
+		<ul>
+		    <li>Create copies of the files <em>ex1.html</em> and <em>ex1.js</em> and rename them <em>ex2.html</em> and <em>ex2.js</em>.</li>
+		    <li>Open <em>ex2.html</em> and <em>ex2.js</em> in a text editor.</li>
+		    <li>In file <em>ex2.html</em> change the included Javascript to <em>ex2.js</em>.</li>
+		    <li>In file <em>ex2.html</em> add the following elements:
+			<ul>
+			    <li>a button with text 'Click to triple the random number'</li>
+			    <li>a paragraph with id 'tripled'</li>
+			</ul>
+		    </li>
+		    <li>In file <em>ex2.js</em> add a function that reads the random number from the element with id 'rand-num', multiplies it by 3 and writes the result into the element with id 'tripled'.</li>
+		    <li>You can read the number from the element with id 'rand-num' and triple it with the code<pre>
+
+document.getElementById("rand-num").innerHTML * 3
+		    </pre>
+		    <span class="question">How does this work?</span><div class="answer" hidden><ul>
+			<li><span class="fw">document.getElementById("rand-num")</span> returns the element with id 'rand-num'</li>
+			<li><span class="fw">.innerHTML</span> accesses the property called <span class="fw">innerHTML</span> on that element (this property has all the contents of the element in a string)</li>
+			<li>even though <span class="fw">innerHTML</span> is a string, if it represents a number and is multiplied by a number, the result is a number (try <span class="fw">"4" * 2</span> in the console and note the difference from Python)</li>
+		    </ul></div>
+		    </li>
+		    <li>Add a call to your new function as the handler for clicks on the new button.</li>
+		    <li>Test your solution to make sure it does what it should, by first clicking on the button that creates a random number and then on the one that triples it (see <a href="https://screencast-o-matic.com/watch/cYXeocs9VD">this video</a> for example of expected behaviour).</li>
+		</ul>
+		
+		<br/><br/><br/><br/><br/><br/>
+	    </section>
+	    
+
+
+	    
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/common.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/main.js"></script>
+	<!-- script src="../../../common/res/scripts/main.js"></script -->
+	<script>init_all();</script>
+    </body>
+</html>
+

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Strings Exercise</title>
+	<style>
+	 button { padding: 1em; margin: 1em;}
+	 p { margin: 0 1em; }
+	</style>
+    </head>
+    <body>
+
+	<button onclick="writeRandomWord('rand-word');" type="button">Click to get a random 5 letter word</button>
+	<p id="rand-word"></p>
+
+
+
+
+<script>	
+function writeRandomWord() {
+          
+	var characters = "abcdefghiklmnopqrstuvwxyz";
+            
+            //specify the length for the new string
+	var lenString = 5;
+	var randomstring = '';
+
+            //loop to select a new character in each iteration
+	for (var i=0; i<lenString; i++) {
+		var rnum = Math.floor(Math.random() * characters.length);
+		randomstring += characters.substring(rnum, rnum+1);
+	}
+
+             //display the generated string 
+	document.getElementById("rand-word").innerHTML = randomstring;
+}
+		 </script>
+	
+    </body>
+</html>

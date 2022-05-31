@@ -1,0 +1,79 @@
+﻿body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background-color: #C0C0C0; /* Page colour */
+}
+
+#container
+{
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    width: 85%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1em;
+}
+
+#container2
+{
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left:auto;
+    margin-right:auto;
+    clear: both;
+}
+
+#footer
+{
+    font-size: small;
+    margin: 2em 0 0 0;
+    clear: both;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Exercise: add rules for the selectors given below  */
+
+.client{
+    float:left;
+    
+
+}
+
+.client img {
+    height: 40%;
+    width: 40%;
+}
+
+
+.client h4{
+    color:#5328ff;
+   font-weight: 800;
+
+}
+
+.client a{
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#content p {
+}
+
+#footer a{
+    color:#645afa;
+    text-decoration: underline;    
+    font-weight: normal;
+}

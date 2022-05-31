@@ -1,0 +1,28 @@
+3 + 4
+7
+3 > 4
+false
+4 < 5
+true
+typeof "abc"
+'string'
+typeof 4
+'number'
+typeof true
+'boolean'
+typeof undefined
+'undefined'
+typeof 4 - 22
+NaN
+typeof ( 4 < 22 )
+'boolean'
+"TUDublin" [0] +  "TUDublin" [6] + "TUDublin" [7]
+'Tin'
+"Apple" < "Butter"
+true
+alert("Hello world")
+
+undefined
+console.log("Hello again")
+VM787:1 Hello again
+undefined

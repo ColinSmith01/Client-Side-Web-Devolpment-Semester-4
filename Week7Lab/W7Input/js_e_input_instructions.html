@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Input Elements Exercises</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript and HTML Input Elements Exercises</h1>
+
+	    <section class="box">
+		<h3>Exercise 1: Calculator</h3>
+
+		<ul>
+		    <li>Open the files <em>inp_ex1.html</em> and <em>inp_ex1.js</em> in a text editor.</li>
+		    <li>The following html elements are defined in the HTML file (find them):
+			<ul>
+			    <li>two input fields</li>
+			    <li>four buttons: "Add", "Subtract", "Multiply" and "Divide"</li>
+			    <li>an empty span element with id <span class="fw">answer</span></li>
+			</ul>
+		    </li>
+		    <li>Your task is to write Javascript code that implements a calculator. When any of the buttons is clicked, the requested operation should be performed on the numbers in the two input fields. The result should be displayed in the element with id <span class="fw">answer</span>.</li>
+		    <li>Place your code in a file called <em>inp_ex1.js</em> and include it in the HTML file using a <span class="fw">script</span> element. The <span class="fw">script</span> element should be created as the last element inside the <span class="fw">body</span> element.</li>
+		    
+		    <li>Tips:
+			<ul>
+			    <li>The click handlers have been set for the buttons, indicating the function names you should use when implementing the operations.</li>
+			    <li>Start by writing one of the functions and you will find that the others will be similar.</li>
+			    <li>Plan out what the function is going to do before you write it (read the inputs, perform the operation, write the output to the answer element).</li>
+			    <li>Think how you would do each of these steps, then implement them.</li>
+			    <li>The value entered by the user into an input field is stored in the element object property <strong class="textxl fw">value</strong> (not <span class="fw">innerHTML</span>).</li>
+			    <li><span class="underline">The value read out of the input field is a string and cannot be used directly in arithmetic operations. You can convert the value to a number by prepending a <span class="fw">+</span> to the string expression</span>. For example<pre>
+
++document.getElementById("num1").value</pre></li>
+			</ul>
+		    </li>
+		    
+		</ul>
+
+	    </section>
+	</div>
+    </body>
+</html>

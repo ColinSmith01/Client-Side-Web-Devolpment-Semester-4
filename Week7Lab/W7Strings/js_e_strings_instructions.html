@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Strings Exercises</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    <ul class="links">
+	    </ul>
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Strings Exercises</h1>
+
+	    <section class="box">
+		<h3>Exercise 1: Random String</h3>
+		<ol>
+		    <strong class="underline">PART 1</strong>
+		    <li>Open the file <em>str_ex1.html</em> in a text editor.</li>
+		    <li>Find the button in the file and from the <span class="fw">onclick</span> event handler property find out the name of the function that needs to exist so that something happens when the button is clicked.</li>
+		    <li>Create an empty function with this name in the <span class="fw">script</span> element inside the file <em>str_ex1.html</em>.</li>
+		    <span class="underline">Any code you write after this should be inside the function:</span>
+		
+		    <li>Declare a variable with the <span class="fw">let</span> keyword, name it <span class="fw">randomWord</span> and initialise it to an empty string.</li>
+		    <li>Use the <span class="fw">charAt</span> string method to get the 1st character (at index 0) from <span class="fw">alphabet</span> and add-assign (<span class="fw">+=</span>) it to <span class="fw">randomWord</span></li>
+		    <li>Repeat the previous step for the 4 indices 2, 4, 6 and 8.</li>
+		    <li>At the end of the function, write a line of code that sets the contents of the element with id 'rand-word' to the value of variable <span class="fw">randomWord</span>.</li>
+		    <li>Reload the page and see what happens when you click the button (see <a class="green underline" href="https://screencast-o-matic.com/watch/cYXebzsRfD">this video</a> for expected behaviour).</li>
+		    <strong class="underline">PART 2</strong>
+		    <li>Now, instead of the fixed indices you used to read some letters of the alphabet, use random numbers between 0 and 25. Find how to do this from the lab assignment on functions and variables.</li>
+		    <li>Reload the page and see what happens when you click the button (see <a class="green underline" href="https://screencast-o-matic.com/watch/cYXebksRhk">this video</a> for an example of expected behaviour).</li>
+		    
+		</ol>
+	    </section>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/common.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/main.js"></script>
+	<!-- script src="../../../common/res/scripts/main.js"></script -->
+	<script>init_all();</script>
+    </body>
+</html>
+

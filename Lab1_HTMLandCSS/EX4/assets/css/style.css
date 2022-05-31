@@ -1,0 +1,56 @@
+body
+ {
+    font-family:Verdana, Arial, sans-serif;
+    background-color: #f4a361;
+    
+}
+
+
+
+h1{
+    text-align: left;
+}
+h4{
+    text-align: left;
+    font-weight: 100;
+}
+
+
+#container
+{
+    table-layout: auto;
+    width: auto;
+    border: 1px solid black;
+    text-align: left;
+   
+    margin-right:auto;
+   
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: #00bfff    ;
+    width: 35%;
+    
+  } 
+
+  th,td {
+    border: 1px solid black;
+  }
+
+  th{
+      background-color:#1e90ff;
+      font-weight: 700;
+      text-align: center;
+  }
+
+  td{
+      text-align: center;
+  }
+  
+
+  table.excercise {
+    table-layout: auto;
+    width: 180px;  
+  }

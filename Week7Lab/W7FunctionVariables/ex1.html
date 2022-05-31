@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<style>
+	 button { padding: 1em; }
+	</style>
+    </head>
+    <body>
+
+
+
+	<button onclick="document.getElementById('rand-num').innerHTML = getRand1to10(0,10)">Click to get a random number between 1 and 10</button>
+	<p id="rand-num"></p>
+    <script>
+        callButtonAction();
+       </script>
+
+    
+<script>
+    function getRand1to10(min, max) {
+      return (r = Math.floor(Math.random() * (max - min)) + min);
+    }
+    </script>
+        
+    
+    
+    <script src="ex1.js"></script>
+    </body>
+</html>
